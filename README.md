@@ -1,6 +1,6 @@
 # Proyecto FPGA de conversión binario a BCD
 
-Este proyecto tiene como objetivo implementar un diseño digital utilizando un lenguaje de descripción de hardware (HDL) y una FPGA para convertir números binarios a BCD a fin de poder visualizarlos en un display de siete segmentos, donde solo se validarán las especificaciones del diseño a través de la construcción de un testbench para el curso de Diseño Lógico de la carrera de Ingeniería en Electrónica del Tecnológico de Costa Rica en el cual participan en su desarrollo los estudiantes Fiorela Chavarría, Akisha Delgado y Luis Daniel Zumbado.
+Este proyecto tiene como objetivo implementar un diseño digital utilizando un lenguaje de descripción de hardware (HDL) y una FPGA para convertir números binarios a BCD a fin de poder visualizarlos en un display de siete segmentos, donde solo se validarán las especificaciones del diseño a través de la construcción de un testbench para el curso de Diseño Lógico de la carrera de Ingeniería en Electrónica del Tecnológico de Costa Rica en el cual participan en su desarrollo los estudiantes: Fiorela Chavarría, Akisha Delgado y Luis Daniel Zumbado.
 
 
 ## Descripción general
