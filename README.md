@@ -13,7 +13,9 @@ A continuación, se muestran los diagramas de bloques de cada subsistema y sus r
 
     Diagrama de bloques del subsistema de lectura y sincronización:
 
-<!--...-->
+
+!(https://github.com/Akisha11/Dise-o-digital-en-HDL-/blob/main/Diagrama%20de%20bloques%20Subsistema%20Lectura.png)
+
 
     Diagrama de estado de la FSM del subsistema de lectura y sincronización:
 
