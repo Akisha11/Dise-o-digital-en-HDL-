@@ -93,4 +93,6 @@ H-->J[Desplaza el binario a la derecha por 4 bits]
 
 Invierte el signo del número en complemento a dos y se desplegará el número con signo de 14 bits en hexadecimal a través del 7 segmentos.
 
+## Análisis de principales problemas hallados durante el trabajo y de las soluciones aplicadas.
 
+Dificultades en la comunicación entre las partes, falta de coherencia en el diseño entre las partes dificultando la implementación y conexión entre los distintos módulos creados por los integrantes del grupo y desconocimiento a la hora del uso de las herramientas necesarias para la creación del proyecto.
