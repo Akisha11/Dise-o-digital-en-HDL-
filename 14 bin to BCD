@@ -1,0 +1,41 @@
+module binary_to_bcd (
+    input [13:0] binary,
+    output [3:0] bcd_thousands,
+    output [3:0] bcd_hundreds,
+    output [3:0] bcd_tens,
+    output [3:0] bcd_ones
+);
+
+reg [3:0] bcd_thousands_reg, bcd_hundreds_reg, bcd_tens_reg, bcd_ones_reg;
+
+always @(*) begin
+    bcd_thousands_reg = 0;
+    bcd_hundreds_reg = 0;
+    bcd_tens_reg = 0;
+    bcd_ones_reg = 0;
+
+    if (binary >= 10000) begin
+        bcd_thousands_reg = binary / 1000;
+        binary = binary % 1000;
+    end
+
+    if (binary >= 1000) begin
+        bcd_hundreds_reg = binary / 100;
+        binary = binary % 100;
+    end
+
+    if (binary >= 100) begin
+        bcd_tens_reg = binary / 10;
+        binary = binary % 10;
+    end
+
+    bcd_ones_reg = binary;
+end
+
+assign bcd_thousands = bcd_thousands_reg;
+assign bcd_hundreds = bcd_hundreds_reg;
+assign bcd_tens = bcd_tens_reg;
+assign bcd_ones = bcd_ones_reg;
+
+endmodule
+

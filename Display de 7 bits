@@ -66,3 +66,4 @@ n = ( n+1)%10
 root.after(1000 , update )
 root.after(1000 , update )
 root.mainloop ( )
+
