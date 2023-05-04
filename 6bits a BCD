@@ -1,0 +1,23 @@
+module bin_to_bcd_6bit(
+    input [5:0] bin,
+    output reg [3:0] bcd
+);
+
+always @(*)
+begin
+    case (bin)
+        6'b000000: bcd = 4'b0000;
+        6'b000001: bcd = 4'b0001;
+        6'b000010: bcd = 4'b0010;
+        6'b000011: bcd = 4'b0011;
+        6'b000100: bcd = 4'b0100;
+        6'b000101: bcd = 4'b0101;
+        6'b000110: bcd = 4'b0110;
+        6'b000111: bcd = 4'b0111;
+        6'b001000: bcd = 4'b1000;
+        6'b001001: bcd = 4'b1001;
+        default: bcd = 4'bxxxx; 
+    endcase
+end
+
+endmodule
