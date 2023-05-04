@@ -1,0 +1,28 @@
+module complemento_a_dos(input [13:0] binario, output reg [13:0] resultado);
+
+reg [13:0] complemento;
+reg signo;
+
+// Obtener el complemento a dos
+always @* begin
+    complemento = ~binario + 1;
+end
+
+// Obtener el bit de signo
+always @* begin
+    signo = binario[13];
+end
+
+// Invertir el bit de signo
+always @* begin
+    resultado[13] = ~signo;
+end
+
+// Sumar 1 al número complemento a dos invertido
+always @* begin
+    reg [13:0] complemento_invertido;
+    complemento_invertido = ~complemento;
+    resultado[12:0] = complemento_invertido[12:0] + 1;
+end
+
+endmodule
