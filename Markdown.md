@@ -1,4 +1,5 @@
-﻿# Proyecto II - Introducción a diseño digital en HDL
+# Proyecto II - Introducción a diseño digital en HDL
+
 
 ## Introducción
 
